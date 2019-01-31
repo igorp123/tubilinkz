@@ -15,6 +15,7 @@ gem 'bootstrap', '~> 4.0.0.alpha6'
 gem 'font-awesome-rails'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
+gem 'therubyracer'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
@@ -32,7 +33,7 @@ group :development, :test do
   gem 'rails-controller-testing'
   gem 'rspec-rails', '~> 3.5'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  gem 'shoulda-matchers', git: 'https://github.com/thoughtbot/shoulda-matchers.git', branch: 'rails-5'
+  gem 'shoulda-matchers'
 end
 
 group :development do
