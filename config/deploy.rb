@@ -2,7 +2,7 @@
 lock '3.8.1'
 
 set :application, 'tubilinkz'
-set :repo_url, 'git@github.com:igorp123/khsm.git'
+set :repo_url, 'git@github.com:igorp123/tubilinkz.git'
 
 set :deploy_to, '/home/deploy/apps/tubilinkz'
 
