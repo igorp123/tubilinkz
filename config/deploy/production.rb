@@ -15,8 +15,12 @@
 # - web server (где живет nginx)
 # - database (где живет наш Postgres)
 # У нас все живет на одной машине.
-server '178.62.209.154', user: 'deploy', roles: %w{app db web}
+server '178.62.209.154', user: 'deploy', roles: %w{app db web resque_worker}
 
+# При запуске resque воркера загружать Rails приложение
+set :resque_environment_task, true
+# Будет запущен один воркер, обслуживающий очереди с именем "tubilinkz*"
+set :workers, { "#{fetch(:application)}*" => 1
 
 # role-based syntax
 # ==================

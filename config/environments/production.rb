@@ -2,6 +2,10 @@ Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
   Rails.application.routes.default_url_options = {host: 'tubi.ru'}
 
+  config.active_job.queue_adapter = :resque
+  config.active_job.queue_name_prefix = "tubilinkz#{Rails.env}"
+
+
   # Code is not reloaded between requests.
   config.cache_classes = true
 
