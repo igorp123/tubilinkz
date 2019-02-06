@@ -20,7 +20,7 @@ server '178.62.209.154', user: 'deploy', roles: %w{app db web resque_worker}
 # При запуске resque воркера загружать Rails приложение
 set :resque_environment_task, true
 # Будет запущен один воркер, обслуживающий очереди с именем "tubilinkz*"
-set :workers, { "#{fetch(:application)}*" => 1
+set :workers, { "#{fetch(:application)}*" => 1}
 
 # role-based syntax
 # ==================
