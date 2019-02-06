@@ -11,6 +11,8 @@ gem 'puma', '~> 3.7'
 gem 'devise', '~> 4.4.0'
 gem 'pundit'
 
+gem 'resque', '~> 1.27'
+
 gem 'jquery-rails'
 gem 'bootstrap', '~> 4.0.0.alpha6'
 gem 'font-awesome-rails'
