@@ -1,16 +1,11 @@
 # config valid only for current version of Capistrano
 #lock '3.8.1'
 
-set :default_env, {
-  PATH: "$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH",
-  RBENV_ROOT: '~/.rbenv',
-  RBENV_VERSION: '2.2.2'
-}
 
 set :application, 'tubilinkz'
 set :repo_url, 'git@github.com:igorp123/tubilinkz.git'
 
-set :deploy_to, '/home/deploy/apps/tubilinkz'
+set :deploy_to, '/home/deploy/tubilinkz'
 
 append :linked_files, 'config/database.yml', 'config/secrets.yml'
 append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system', 'public/uploads'
