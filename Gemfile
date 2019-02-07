@@ -7,7 +7,7 @@ end
 
 gem 'rails', '~> 5.1.1'
 gem 'puma', '~> 3.7'
-gem 'devise', '~> 4.4.0'
+gem 'devise', '~> 4.3.0'
 gem 'pundit', '~> 1.1'
 
 gem 'resque', '~> 1.27'
@@ -32,7 +32,7 @@ group :production do
 end
 
 group :development, :test do
-  gem 'sqlite3', '~> 1.3.7'
+  gem 'sqlite3'
   gem 'rails-controller-testing'
   gem 'rspec-rails', '~> 3.5'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -40,7 +40,7 @@ group :development, :test do
 end
 
 group :development do
-  gem 'capistrano', '~> 3.7'
+  gem 'capistrano', '~> 3.8'
   gem 'capistrano-rails', '~> 1.2'
   gem 'capistrano-passenger', '~> 0.2'
   gem 'capistrano-rbenv', '~> 2.1'
@@ -55,3 +55,4 @@ group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'rubocop'
 end
+
