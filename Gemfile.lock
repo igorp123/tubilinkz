@@ -328,7 +328,7 @@ PLATFORMS
 DEPENDENCIES
   bootstrap (~> 4.0.0.alpha6)
   byebug
-  capistrano (~> 3.8)
+  capistrano (~> 3.7)
   capistrano-bundler (~> 1.2)
   capistrano-passenger (~> 0.2)
   capistrano-rails (~> 1.2)
