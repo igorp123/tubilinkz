@@ -10,7 +10,7 @@ gem 'puma', '~> 3.7'
 gem 'devise', '~> 4.3.0'
 gem 'pundit', '~> 1.1'
 
-gem 'resque', '~> 1.27'
+gem 'resque'
 
 gem 'jquery-rails'
 gem 'bootstrap', '~> 4.0.0.alpha6'
@@ -40,13 +40,13 @@ group :development, :test do
 end
 
 group :development do
-  gem "capistrano", "~> 3.10", require: false
-  gem "capistrano-rails", "~> 1.3", require: false
+  gem "capistrano"
+  gem "capistrano-rails"
 
   gem 'capistrano-passenger'
-  gem 'capistrano-rbenv', '~> 2.0'
-  gem 'capistrano-bundler', '~> 1.5'
-  gem 'capistrano-resque'#, require: false
+  gem 'capistrano-rbenv'
+  gem 'capistrano-bundler'
+  gem 'capistrano-resque'
 
   gem 'letter_opener'
   gem 'devise-bootstrapped', github: 'king601/devise-bootstrapped', branch: 'bootstrap4'
