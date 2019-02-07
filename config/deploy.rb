@@ -1,6 +1,12 @@
 # config valid only for current version of Capistrano
 #lock '3.8.1'
 
+set :default_env, {
+  PATH: "$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH",
+  RBENV_ROOT: '~/.rbenv',
+  RBENV_VERSION: '2.2.2'
+}
+
 set :application, 'tubilinkz'
 set :repo_url, 'git@github.com:igorp123/tubilinkz.git'
 

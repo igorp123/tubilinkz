@@ -43,12 +43,10 @@ group :development do
   gem "capistrano", "~> 3.10", require: false
   gem "capistrano-rails", "~> 1.3", require: false
 
-  #gem 'capistrano', '~> 3.8'
-  #gem 'capistrano-rails', '~> 1.2'
   gem 'capistrano-passenger'
   gem 'capistrano-rbenv', '~> 2.0'
-  gem 'capistrano-bundler'
-  gem 'capistrano-resque', require: false
+  gem 'capistrano-bundler', '~> 1.5'
+  gem 'capistrano-resque'#, require: false
 
   gem 'letter_opener'
   gem 'devise-bootstrapped', github: 'king601/devise-bootstrapped', branch: 'bootstrap4'
